@@ -21,7 +21,7 @@
 .toolbar { display:flex; gap:10px; align-items:center; margin:20px 0 14px; } .toolbar input,.toolbar select,.form-card input,.form-card textarea,.form-card select { width:100%; border:1px solid var(--line); border-radius:10px; padding:11px 12px; font-family:inherit; }
 .toolbar input { flex:1; max-width:320px; } .detail-grid { display:grid; grid-template-columns:minmax(0,2fr) minmax(260px,1fr); gap:16px; }
 .summary-list { display:grid; grid-template-columns:130px 1fr; gap:10px; } .summary-list dt { color:var(--muted); } .summary-list dd { margin:0; }
-.record-list { display:flex; flex-direction:column; gap8px; } .record-item { border-left:3px solid var(--primary); padding:8px 12px; background:#f8f9fc; }
+.record-list { display:flex; flex-direction:column; gap:8px; } .record-item { border-left:3px solid var(--primary); padding:8px 12px; background:#f8f9fc; }
 .actions { display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; } .form-card { max-width:720px; } .field { margin-bottom:16px; } .field label { display:block; font-weight:700; margin-bottom:8px; }
 .tag-options { display:flex; flex-wrap:wrap; gap:8px; } .tag-options label { font-weight:400; } .tag-options input { width:auto; margin-right:5px; }
 .notice { background:#eef1ff; color:#424b91; border-radius:12px; padding:14px; margin:14px 0; } .kanban { display:grid; grid-template-columns:repeat(4,minmax(180px,1fr)); gap:12px; } .kanban-col { background:#eef0f5; border-radius:14px; padding:12px; min-height:220px; }

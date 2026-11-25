@@ -19,7 +19,11 @@
   function renderAll(){
     let list=CONTESTS.filter(c=>active==="전체"||c.field===active);
     const q=document.getElementById("search").value.trim();
-    if(q){const fuse=new Fuse(list,{keys:["title","host","field","tags"],threshold:.35});list=fuse.search(q).map(r=>r.item)}
+    if(q){
+      const normalized=q.toLocaleLowerCase("ko-KR");
+      list=list.filter(c=>[c.title,c.host,c.field,...(c.tags||[])]
+        .some(value=>String(value).toLocaleLowerCase("ko-KR").includes(normalized)));
+    }
     if(document.getElementById("sort").value==="deadline")list=[...list].sort((a,b)=>dayjs(a.deadline)-dayjs(b.deadline));else list=[...list].sort((a,b)=>a.title.localeCompare(b.title,"ko"));
     document.getElementById("allContests").innerHTML=list.map(card).join("");
   }
