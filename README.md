@@ -14,7 +14,7 @@
 
 7단계: 경험 및 역량을 정리하는 포트폴리오 페이지(portfolio-star.html) 구현
 
-최종 정리: 페이지별 HTML 파일 분리 및 공통 CSS·JavaScript·데이터 리소스 구성
+최종 정리: 페이지별 HTML 파일 분리 및 공통 CSS·JavaScript· 오류 수정 및 데이터 리소스 구성
 
 
 사용 오픈소스
